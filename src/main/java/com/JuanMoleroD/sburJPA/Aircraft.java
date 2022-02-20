@@ -17,7 +17,7 @@ import java.time.Instant;
 public class Aircraft {
     @Id
     @GeneratedValue
-    private long id;
+    private Long id;
 
     private String callsign, squawk, reg, flightno, route, type, category;
 
@@ -36,6 +36,7 @@ public class Aircraft {
     private boolean isADSB;
     @JsonProperty("is_on_ground")
     private boolean isOnGround;
+
     @JsonProperty("last_seen_time")
     private Instant lastSeenTime;
     @JsonProperty("pos_update_time")
